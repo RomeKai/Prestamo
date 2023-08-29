@@ -24,16 +24,16 @@ function loancalculator() {
     var interest = Number(document.getElementById("anualinterest").value) / 100;
     var timem = Number(document.getElementById("timeinmonths").value);
 
-    // Valida que los valores sean numéricos y no estén en blanco
+    // Valida que los valores sean numericos y no esten en blanco
     if (isNaN(valuep) || isNaN(interest) || isNaN(timem)) {
-        alert("Por favor, ingrese valores numéricos válidos en todos los campos.");
+        alert("Por favor, ingrese valores numericos validos en todos los campos.");
         return;
     }
 
-    // El interés dividido por los 12 meses del año
+    // El interes dividido por los 12 meses del ano
     var monthlyinterest = interest / 12;
 
-    // Calcula el pago mensual usando la fórmula correcta
+    // Calcula el pago mensual usando la formula correcta
     var monthlypay = (valuep * monthlyinterest * Math.pow(1 + monthlyinterest, timem)) / (Math.pow(1 + monthlyinterest, timem) - 1);
 
     // Calcula el pago total sumando el valor principal
