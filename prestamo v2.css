@@ -9,6 +9,18 @@
     --white-color: #EEEEEE;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
 /*
     CSS Main | Para modificar el contenido hacerlo en otro CSS
   */
@@ -150,6 +162,7 @@ nav>ul>li:last-child {
     margin: 10px auto;
     justify-content: center;
     align-items: center;
+    margin-left: 69rem;
     z-index: 99;
     
     
@@ -173,13 +186,15 @@ nav>ul>li:last-child {
 
 /*PRESTAMOS*/
 
+
 .top-btns {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    float: top;
+    margin-top: 10rem;
+    margin-left: 33rem;
   }
   
   .top-btns .select {
@@ -258,14 +273,12 @@ nav>ul>li:last-child {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-top: 60%;
+    margin-top: 5rem;
+    margin-left: 25rem;
     background-color: rgba(207, 194, 150, 0.6);
     border: 2px solid #d8aa56;
-    padding: 30px;
     text-decoration: none;
-    width: 70%;
-    float: bottom;
-    
+    width: 80%;
   }
 
   .acept-btn
